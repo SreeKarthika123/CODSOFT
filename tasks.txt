@@ -16,7 +16,7 @@ def list_all_tasks():
         print("Your To-Do List is empty.")
 
 # Function to mark a task as done
-def mark_task_done_and_remove(task_index):
+def mark_task_done(task_index):
     if 1 <= task_index <= len(task_list):
         task = task_list[task_index - 1]
         print(f"Task '{task}' marked as done!")
@@ -32,18 +32,18 @@ while True:
     print("3. Mark a task as done")
     print("4. Quit")
 
-    choice = input("Enter your choice (1/2/3/4): ")
+    ch = input("Enter your choice (1/2/3/4): ")
 
-    if choice == "1":
+    if ch == "1":
         task = input("Enter the task: ")
         add_task_to_list(task)
-    elif choice == "2":
+    elif ch == "2":
         list_all_tasks()
-    elif choice == "3":
+    elif ch == "3":
         task_index = int(input("Enter the task number to mark as done: "))
-        mark_task_done_and_remove(task_index)
-    elif choice == "4":
-        print("Goodbye!")
+        mark_task_done(task_index)
+    elif ch == "4":
+        print("ByeBye!")
         break
     else:
         print("Invalid choice. Please select 1, 2, 3, or 4.")
