@@ -1,0 +1,23 @@
+a=int(input("Enter a number"))
+b=int(inofput("Enter a number"))
+ch=input("Enter a character"))
+while True:
+        if ch in("a","b","c","d","e"):
+           if(ch=="a"):
+                  print("Additionn of two numbers",a+b)
+                  break
+           if(ch=="b"):
+                  print("Subtraction of two numbers:",a-b)
+                  break
+           if(ch=="c"):
+                  print("Multiplication of two numbers:",a*b)
+                  break
+           if(ch=="d"):
+                  print("Division of two numbers:",a/b)
+                  break
+           if(ch=="e"):
+                  print("Modulus of two numbers:",a%b)
+                  break
+       else:
+           print("Invalid input")
+      
